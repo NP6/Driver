@@ -3,7 +3,7 @@ Info
 
 All of the function return an object that is composed like this:
 
-```
+```javascript
 var response = {
   statusCode: httpResponse.statusCode,
   body: JSON.parse(body)
@@ -23,14 +23,14 @@ Where `statusCode` is the HTTP code and `body` an object that is the response of
 ## Basics:
 
 Create a driver with a xkey:
-```
+```javascript
 var Driver = require('./driver.js');
 
 var driver = new Driver("my_xkey");
 ```
 
 Each route is available with his own class. For exemple to create a target:
-```
+```javascript
 driver.target.create(...);
 ```
 This is a list of available routes:
@@ -56,7 +56,7 @@ Available methods:
 
 ###### Creation of a campaign:
 
-```
+```javascript
 driver.action.create(smsCampaign).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -66,7 +66,7 @@ driver.action.create(smsCampaign).then(function(response) {
 
 ###### Put the campaign on Test phase:
 
-```
+```javascript
 driver.action.test(campaignId, testObject).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -76,7 +76,7 @@ driver.action.test(campaignId, testObject).then(function(response) {
 
 ###### Validate the campaign:
 
-```
+```javascript
 driver.action.validate(campaignId, validateObject).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -104,7 +104,7 @@ Available methods:
 
 ###### Creation of a static segment:
 
-```
+```javascript
 driver.segment.create(segment).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -114,7 +114,7 @@ driver.segment.create(segment).then(function(response) {
 
 ###### Adding a target to a segment:
 
-```
+```javascript
 var targetId = 'XXXXXX';
 var segmentId = 'XXXXXX';
 
@@ -138,7 +138,7 @@ Available methods:
 
 ###### Add a Target:
 
-```
+```javascript
 driver.target.create(target).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -148,7 +148,7 @@ driver.target.create(target).then(function(response) {
 
 ###### Update a Target:
 
-```
+```javascript
 driver.target.update(targetId, target).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -158,7 +158,7 @@ driver.target.update(targetId, target).then(function(response) {
 
 ###### Send a message to a Target:
 
-```
+```javascript
 var actionId = 'XXXXX';
 var targetId = 'XXXXXX';
 
@@ -171,7 +171,7 @@ driver.send.message(actionId, targetId).then(function(response) {
 
 ###### Send a message with a different content to a Target:
 
-```
+```javascript
 var actionId = 'XXXXX';
 var targetId = 'XXXXXX';
 

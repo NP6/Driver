@@ -4,7 +4,7 @@ Usage
 #### Basics:
 
 Create a driver with a xkey:
-```
+```javascript
 var Driver = require('./driver.js');
 
 var driver = new Driver({
@@ -15,7 +15,7 @@ var driver = new Driver({
 #### Add a Target:
 
 Create a target (or update it if it already exists):
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -38,7 +38,7 @@ wrapper.createOrModifyTarget(target).then(function(response) {
 #### Add a Target and send a message:
 
 Create a target (or update it if it already exist) and send a message to this target:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -63,7 +63,7 @@ wrapper.addTargetAndSendMessage(target, actionId).then(function(response) {
 #### Creation of a campaign:
 
 Create a campaign:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -91,7 +91,7 @@ wrapper.createCampaign(smsCampaign).then(function(response) {
 #### Creation of a segment:
 
 Create a static segment:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -117,7 +117,7 @@ wrapper.createSegment(segment).then(function(response) {
 
 Validate a campaign (require the campaign ID):
 
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -136,7 +136,7 @@ wrapper.validateCampaign(campaignId).then(function(response) {
 
 Create a target (or update it if it already exist), and then add it to the segment:
 
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -161,7 +161,7 @@ wrapper.createTargetAndAddToSegment(target, segmentId).then(function(response) {
 
 Create a campaign and launch the test phase
 
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -178,7 +178,7 @@ wrapper.createAndTestCampaign(mailCampaign, testconfig).then(function(response) 
 ### Import
 
 Launch manual import:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({

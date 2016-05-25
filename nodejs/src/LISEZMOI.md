@@ -3,7 +3,7 @@ Info
 
 Toute les fonctions renvoient un objet de cette forme:
 
-```
+```javascript
 var response = {
   statusCode: httpResponse.statusCode,
   body: JSON.parse(body)
@@ -23,14 +23,14 @@ Où `statusCode` est le code HTTP de la réponse et `body` est un objet contenan
 ## Base:
 
 Créer un driver avec une xkey:
-```
+```javascript
 var Driver = require('./driver.js');
 
 var driver = new Driver("my_xkey");
 ```
 
 Chaque route est disponible grâce à sa classe associé. Par exemple pour créer une cible:
-```
+```javascript
 driver.target.create(...);
 ```
 
@@ -57,7 +57,7 @@ Méthodes disponibles:
 
 #### Création de campagne:
 
-```
+```javascript
 driver.action.create(smsCampaign).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -67,7 +67,7 @@ driver.action.create(smsCampaign).then(function(response) {
 
 #### Passer la campagne en phase de Test:
 
-```
+```javascript
 driver.action.test(campaignId, testObject).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -77,7 +77,7 @@ driver.action.test(campaignId, testObject).then(function(response) {
 
 #### Valider la campagne:
 
-```
+```javascript
 driver.action.validate(campaignId, validateObject).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -105,7 +105,7 @@ Méthodes disponibles:
 
 #### Création d'un ségment statique:
 
-```
+```javascript
 driver.segment.create(segment).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -115,7 +115,7 @@ driver.segment.create(segment).then(function(response) {
 
 #### Ajout d'une cible à un ségment:
 
-```
+```javascript
 var targetId = 'XXXXXX';
 var segmentId = 'XXXXXX';
 
@@ -139,7 +139,7 @@ Méthodes disponibles:
 
 #### Ajouter une cible:
 
-```
+```javascript
 driver.target.create(target).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -149,7 +149,7 @@ driver.target.create(target).then(function(response) {
 
 #### Mettre à jour une cible:
 
-```
+```javascript
 driver.target.update(targetId, target).then(function(response) {
   // code ...
 }).catch(function(error) {
@@ -159,7 +159,7 @@ driver.target.update(targetId, target).then(function(response) {
 
 #### Envoyer un message à une cible:
 
-```
+```javascript
 var actionId = 'XXXXX';
 var targetId = 'XXXXXX';
 
@@ -172,7 +172,7 @@ driver.send.message(actionId, targetId).then(function(response) {
 
 #### Envoyer un message en changeant sont contenus à une cible:
 
-```
+```javascript
 var actionId = 'XXXXX';
 var targetId = 'XXXXXX';
 

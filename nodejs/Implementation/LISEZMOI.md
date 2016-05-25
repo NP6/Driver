@@ -4,7 +4,7 @@ Utilisation
 #### Base:
 
 Créer un driver avec une xkey:
-```
+```javascript
 var Driver = require('./driver.js');
 
 var driver = new Driver({
@@ -15,7 +15,7 @@ var driver = new Driver({
 #### Ajouter une cible:
 
 Créer une cible (ou la mettre à jour si elle existe déjà):
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -38,7 +38,7 @@ wrapper.createOrModifyTarget(target).then(function(response) {
 #### Ajouter une cible et envoyer un message:
 
 Créer une cible (ou la mettre à jour si elle existe déjà) et envoyer un message à cette cible:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -63,7 +63,7 @@ wrapper.addTargetAndSendMessage(target, actionId).then(function(response) {
 #### Création de campagne:
 
 Créer une campagne:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -92,7 +92,7 @@ wrapper.createCampaign(smsCampaign).then(function(response) {
 #### Création de segment:
 
 Créer un segment statique:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -117,7 +117,7 @@ wrapper.createSegment(segment).then(function(response) {
 #### Validation de campagne:
 
 Valider une campagne (requiert de connaitre son ID):
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -135,7 +135,7 @@ wrapper.validateCampaign(campaignId).then(function(response) {
 ### Création d'une cible, puis l'ajoute à un segment
 
 Créer une cible (ou la mettre à jour si elle existe déjà), puis l'ajoute à un segment:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -159,7 +159,7 @@ wrapper.createTargetAndAddToSegment(target, segmentId).then(function(response) {
 ### Création d'une campagne, puis lancement de la phase de test
 
 Créer une campagne puis lancer la phase de test:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
@@ -176,7 +176,7 @@ wrapper.createAndTestCampaign(mailCampaign, testconfig).then(function(response) 
 ### Import
 
 Lancer un import manuel:
-```
+```javascript
 var Wrapper = require('./wrapper.js');
 
 var wrapper = new Wrapper({
