@@ -17,7 +17,7 @@
 ## Action
 
 ### Campagne mail
-```
+```javascript
 {
   type: 'mailCampaign',
   name: 'nom de la campagne',
@@ -47,7 +47,7 @@
 }
 ```
 ### Campagne SMS
-```
+```javascript
 {
   type: 'smsCampaign',
   name: 'nom de la campagne',
@@ -61,7 +61,7 @@
 }
 ```
 ### Message mail
-```
+```javascript
 {
   type: 'mailMessage',
   name: 'nom du message',
@@ -85,7 +85,7 @@
 }
 ```
 ### Message SMS
-```
+```javascript
 {
   type: 'smsMessage',
   name: 'nom du message',
@@ -98,7 +98,7 @@
 }
 ```
 ### Test
-```
+```javascript
 {
   fortest: true,
   campaignAnalyser: false,
@@ -107,7 +107,7 @@
 }
 ```
 ### Validation
-```
+```javascript
 {
   fortest: false,
   campaignAnalyser: false,
@@ -117,7 +117,7 @@
 ```
 
 ## Champs
-```
+```javascript
 {
   'type': 'type du champs',
   'name': 'nom du champ',
@@ -130,7 +130,7 @@
 }
 ```
 ## Message
-```
+```javascript
 {
   content: {
     html:	'Message HTML',
@@ -144,7 +144,7 @@
 }
 ```
 ## Segment
-```
+```javascript
 {
   name: 'nom du segment',
   description: 'sdescription du segment',
@@ -154,7 +154,7 @@
 }
 ```
 ## Cible
-```
+```javascript
 {
   1234: 'Mr',
   1234: 'Test',
@@ -163,7 +163,7 @@
 ```
 
 Note: Si vous utilisez le `Wrapper` vous pouvez utiliser les cibles de la manière suivante
-```
+```javascript
 {
   'civilité': 'Mr',
   'nom': 'Test',

@@ -17,11 +17,11 @@
 ## Action
 
 ### Mail campaign
-```
+```javascript
 {
   type: 'mailCampaign',
-  name: 'campaign's name',
-  description: 'campaign's description',
+  name: 'campaign\'s name',
+  description: 'campaign\'s description',
   scheduler: {
     segments: {
       selected: []
@@ -47,11 +47,11 @@
 }
 ```
 ### SMS campaign
-```
+```javascript
 {
   type: 'smsCampaign',
-  name: 'campaign's name',
-  description: 'campaign's description',
+  name: 'campaign\'s name',
+  description: 'campaign\'s description',
   informations: {
     folder: null,
     category: null
@@ -61,11 +61,11 @@
 }
 ```
 ### Mail message
-```
+```javascript
 {
   type: 'mailMessage',
-  name: 'message's name',
-  description: 'message's description',
+  name: 'message\'s name',
+  description: 'message\'s description',
   content: {
     text: 'Text message',
     html: 'Html message',
@@ -85,11 +85,11 @@
 }
 ```
 ### SMS message
-```
+```javascript
 {
   type: 'smsMessage',
-  name: 'message's name',
-  description: 'message's description',
+  name: 'message\'s name',
+  description: 'message\'s description',
   informations: {
     folder: null,
     category: null
@@ -98,7 +98,7 @@
 }
 ```
 ### Test
-```
+```javascript
 {
   fortest: true,
   campaignAnalyser: false,
@@ -107,7 +107,7 @@
 }
 ```
 ### Validate
-```
+```javascript
 {
   fortest: false,
   campaignAnalyser: false,
@@ -116,7 +116,7 @@
 }
 ```
 ## Field
-```
+```javascript
 {
   'type': 'field type',
   'name': 'field name',
@@ -129,7 +129,7 @@
 }
 ```
 ## Message
-```
+```javascript
 {
   content: {
     html:	'html message',
@@ -143,17 +143,17 @@
 }
 ```
 ## Segment
-```
+```javascript
 {
-  name: 'segment's name',
-  description: 'segment's description',
+  name: 'segment\'s name',
+  description: 'segment\'s description',
   isTest: true,
   type: 'segment type',
   expiration: '2026-08-08T12:11:00Z'
 }
 ```
 ## Target
-```
+```javascript
 {
   1234: 'Mr',
   1234: 'Test',
@@ -162,7 +162,7 @@
 ```
 
 Note: If you're using the `Wrapper`, you can use target like following
-```
+```javascript
 {
   'civility': 'Mr',
   'name': 'Test',
