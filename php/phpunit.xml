@@ -1,0 +1,7 @@
+<phpunit bootstrap="tests/autoloader.php">
+  <testsuites>
+    <testsuite name="driver">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
