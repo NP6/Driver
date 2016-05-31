@@ -2,6 +2,7 @@
 
 ### Sommaire
 
+1. [Rappel](#Rappel)
 1. [Action](#Action)
   1. [Campagne mail](#Campagne mail)
   1. [Campagne SMS](#Campagne SMS)
@@ -13,6 +14,10 @@
 1. [Message](#Message)
 1. [Segment](#Segment)
 1. [Cible](#Cible)
+
+## Rappel
+
+Nous vous rappelons que ces modèles vous sont donnés à titre indicatif, pour plus d'informations concernant les champs disponibles rendez-vous sur notre [documentation](http://v8.mailperformance.com/doc/).
 
 ## Action
 

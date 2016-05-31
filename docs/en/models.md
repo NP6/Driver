@@ -2,6 +2,7 @@
 
 ### Table of Contents
 
+1. [Reminder](#Reminder)
 1. [Action](#Action)
   1. [Mail campaign](#Mail campaign)
   1. [SMS campaign](#SMS campaign)
@@ -13,6 +14,10 @@
 1. [Message](#Message)
 1. [Segment](#Segment)
 1. [Target](#Target)
+
+## Reminder
+
+We want to remind you that these models are given to you as it, if you want more precise information on which fields are available go to our [documentation](http://v8.mailperformance.com/doc/).
 
 ## Action
 
