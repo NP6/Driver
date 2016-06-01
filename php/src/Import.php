@@ -88,7 +88,7 @@ class Import
         return $this->_connection->request($routeUrl, 'POST', $data, true);
     }
     /**
-     * List all segment
+     * List all import
      *
      * @return array
      */
