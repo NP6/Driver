@@ -16,6 +16,6 @@ To launch the tests simply launch:
 
 ```
 $> composer install mock server
-$> composer start mock server
-$> composer test
+$> cd ..
+$> apimocker -c ./mocks/config.json
 ```

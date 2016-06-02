@@ -1,0 +1,34 @@
+[
+  {
+    "id": "000GMLHD",
+    "creationDate": "2016-04-04T08:55:00Z",
+    "lastUpdateDate": "2016-04-25T14:27:00Z",
+    "fields": {
+      "8628": "first@test.com"
+    }
+  },
+  {
+    "id": "000GMLHE",
+    "creationDate": "2016-04-04T08:55:00Z",
+    "lastUpdateDate": "2016-04-06T15:03:00Z",
+    "fields": {
+      "8628": "second@test.com"
+    }
+  },
+  {
+    "id": "000GMLHF",
+    "creationDate": "2016-04-04T08:55:00Z",
+    "lastUpdateDate": "2016-04-06T15:03:00Z",
+    "fields": {
+      "8628": "third@test.com"
+    }
+  },
+  {
+    "id": "000GMLHG",
+    "creationDate": "2016-04-04T08:55:00Z",
+    "lastUpdateDate": "2016-04-06T15:03:00Z",
+    "fields": {
+      "8628": "fourth@test.com"
+    }
+  }
+]

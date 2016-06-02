@@ -1,0 +1,43 @@
+[
+  {
+    "type": "mailCampaign",
+    "id": "000QEU",
+    "name": "Mail Campaign name",
+    "creationDate": "2016-04-04T08:40:00Z",
+    "informations": {
+      "folder": 7082,
+      "category": 1443,
+      "state": 80
+    },
+    "settings": {
+      "templating": {
+        "version": "2"
+      }
+    },
+    "scheduler": {
+      "type": "asap",
+      "startDate": "2016-04-04T08:57:00Z"
+    },
+    "monitor": {
+      "lastSent": {
+        "at": "2016-04-04T08:57:00Z"
+      }
+    }
+  },
+  {
+    "type": "mailMessage",
+    "id": "000QF0",
+    "name": "Mail campaign (duplicata)",
+    "creationDate": "2016-04-04T08:58:00Z",
+    "informations": {
+      "folder": 7082,
+      "category": 1443,
+      "state": 50
+    },
+    "settings": {
+      "templating": {
+        "version": "2"
+      }
+    }
+  }
+]

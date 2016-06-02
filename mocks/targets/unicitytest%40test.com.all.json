@@ -1,0 +1,13 @@
+{
+  "id": "000GMLHD",
+  "creationDate": "2016-04-04T08:55:00Z",
+  "lastUpdateDate": "2016-04-25T14:27:00Z",
+  "fields": {
+    "8628": "test@test.com",
+    "8630": "test",
+    "8631": "Mlle",
+    "8646": null
+  },
+  "bounce": [],
+  "redList": {}
+}

@@ -1,0 +1,51 @@
+{
+  "type": "mailCampaign",
+  "id": "000QEU",
+  "name": "Mail Campaign name ",
+  "description": null,
+  "creationDate": "2016-04-04T08:40:00Z",
+  "informations": {
+    "folder": 7082,
+    "category": 1443,
+    "state": 80
+  },
+  "settings": {
+    "field": 8628,
+    "culture": "fr-FR",
+    "contentFormat": 2,
+    "useFormLinkSSL": false,
+    "performance": {
+      "openingRate": 0,
+      "clickRate": 0,
+      "unsubscribeRate": 0
+    },
+    "mp": {
+      "use": false,
+      "increment": false
+    },
+    "webAnalyser": null
+  },
+  "content": {
+    "headers": {
+      "from": {
+        "prefix": "WWC",
+        "domain": "defaultdomain",
+        "label": "Willy Waller Company"
+      },
+      "reply": null
+    },
+    "subject": "Nouveau Willy Waller 2006",
+    "html": "html content",
+    "text": "html content"
+  },
+  "scheduler": {
+    "type": "asap",
+    "segments": {
+      "selected": [
+        14098
+      ],
+      "excluded": []
+    },
+    "speed": 0
+  }
+}

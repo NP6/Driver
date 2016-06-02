@@ -1,0 +1,38 @@
+[
+  {
+    "type": "static",
+    "id": 14091,
+    "name": "BAT TEST",
+    "creation": "2016-04-01T10:22:00Z",
+    "expiration": "2016-10-01T10:22:00Z",
+    "isTest": true,
+    "targetsCount": 3
+  },
+  {
+    "type": "static",
+    "id": 14098,
+    "name": "Abonnés",
+    "creation": "2016-04-04T08:55:00Z",
+    "expiration": "2016-10-01T10:55:00Z",
+    "isTest": false,
+    "targetsCount": 7
+  },
+  {
+    "type": "dynamic",
+    "id": 14105,
+    "name": "Dynamo",
+    "creation": "2016-04-04T09:18:00Z",
+    "expiration": "2016-10-04T22:00:00Z",
+    "isTest": false,
+    "targetsCount": 288
+  },
+  {
+    "type": "static",
+    "id": 14180,
+    "name": "Exclus",
+    "creation": "2016-04-14T08:47:00Z",
+    "expiration": "2016-10-14T22:00:00Z",
+    "isTest": false,
+    "targetsCount": 1
+  }
+]

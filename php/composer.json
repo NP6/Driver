@@ -3,8 +3,7 @@
         "phpunit/phpunit": "5.3.*"
     },
     "scripts": {
-        "install mock server": "npm install apimocker",
-        "start mock server": "apimocker -c ./../mocks/config.json",
+        "install mock server": "npm install -g apimocker",
         "test": "phpunit"
     }
 }

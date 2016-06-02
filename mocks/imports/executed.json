@@ -1,0 +1,68 @@
+{
+  "startDate": "2016-05-23T12:09:29.137Z",
+  "state": 0,
+  "content": {
+    "features": [
+      {
+        "type": "segmentation",
+        "segmentId": 14098,
+        "emptyExisitingSegment": false
+      },
+      {
+        "type": "report",
+        "sendFinalReport": true,
+        "sendErrorReport": true,
+        "contactGuids": [
+          "044EAE5A"
+        ],
+        "groupIds": []
+      },
+      {
+        "type": "database",
+        "updateExisting": true,
+        "crushData": false
+      }
+    ],
+    "bindings": {
+      "identifier": {
+        "guid": 8330
+      },
+      "name": "Premier",
+      "separator": 59,
+      "startAt": 1,
+      "binds": [
+        {
+          "columnIndex": 0,
+          "fieldId": -10
+        },
+        {
+          "columnIndex": 1,
+          "fieldId": 8630
+        },
+        {
+          "columnIndex": 2,
+          "fieldId": 8631
+        },
+        {
+          "columnIndex": 3,
+          "fieldId": 8628
+        },
+        {
+          "columnIndex": 4,
+          "fieldId": -10
+        },
+        {
+          "columnIndex": 5,
+          "fieldId": -10
+        }
+      ],
+      "savedImportFormat": true
+    },
+    "source": {
+      "type": "file",
+      "creationDate": "0001-01-01T00:00:00Z",
+      "updateDate": "2016-05-23T12:09:29.059Z",
+      "filename": "c79c634db3_import.csv"
+    }
+  }
+}

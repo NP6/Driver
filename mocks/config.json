@@ -1,0 +1,166 @@
+{
+	"quiet": false,
+	"port": 8888,
+	"webServices": {
+		"segments": {
+			"verbs": ["get", "post"],
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "segments/all.json"
+				},
+				"post": {
+					"httpStatus": 200,
+					"mockFile": "segments/created.json"
+				}
+			}
+		},
+		"segments/:id": {
+			"verbs": ["delete", "get", "put"],
+			"responses": {
+				"delete": {
+					"httpStatus": 204
+				},
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "segments/created.json"
+				},
+				"put": {
+					"httpStatus": 200,
+					"mockFile": "segments/created.json"
+				}
+			}
+		},
+		"targets/:id/segments/:id": {
+			"verbs": ["post", "delete"],
+			"responses": {
+				"post": {
+					"httpStatus": 204
+				},
+				"delete": {
+					"httpStatus": 204
+				}
+			}
+		},
+		"imports": {
+			"verbs": ["get", "post"],
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "imports/all.json"
+				},
+				"post": {
+					"httpStatus": 200,
+					"mockFile": "imports/created.json"
+				}
+			}
+		},
+		"imports/:id": {
+			"verbs": ["delete", "get", "put"],
+			"responses": {
+				"delete": {
+					"httpStatus": 204
+				},
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "imports/created.json"
+				},
+				"put": {
+					"httpStatus": 200,
+					"mockFile": "imports/created.json"
+				}
+			}
+		},
+		"imports/:id/executions": {
+			"verbs": ["post"],
+			"responses": {
+				"post": {
+					"httpStatus": 200,
+					"mockFile": "imports/executed.json"
+				}
+			}
+		},
+		"targets": {
+			"verbs": ["get", "post"],
+			"switch": "unicity",
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "targets/all.json"
+				},
+				"post": {
+					"httpStatus": 200,
+					"mockFile": "targets/created.json"
+				}
+			},
+			"switchResponse": {
+				"unicitytest@test.com": {
+					"httpStatus": 200,
+					"mockFile": "targets/found.json"
+				}
+			}
+		},
+		"targets/:id": {
+			"verbs": ["get", "put", "delete"],
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "targets/created.json"
+				},
+				"put": {
+					"httpStatus": 200,
+					"mockFile": "targets/created.json"
+				},
+				"delete": {
+					"httpStatus": 204
+				}
+			}
+		},
+		"fields": {
+			"verbs": ["get"],
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "fields/all.json"
+				}
+			}
+		},
+		"actions": {
+			"verbs": ["get", "post"],
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "actions/all.json"
+				},
+				"post": {
+					"httpStatus": 200,
+					"mockFile": "actions/created.json"
+				}
+			}
+		},
+		"actions/:id": {
+			"verbs": ["get", "put", "delete"],
+			"responses": {
+				"get": {
+					"httpStatus": 200,
+					"mockFile": "actions/created.json"
+				},
+				"put": {
+					"httpStatus": 200,
+					"mockFile": "actions/created.json"
+				},
+				"delete": {
+					"httpStatus": 204
+				}
+			}
+		},
+		"actions/:id/validation": {
+			"verbs": ["POST"],
+			"httpStatus": 204
+		},
+		"actions/:id/targets/:id": {
+			"verbs": ["POST"],
+			"httpStatus": 204
+		}
+	}
+}

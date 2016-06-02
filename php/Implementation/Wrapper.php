@@ -47,8 +47,8 @@ class Wrapper
      */
     public function createOrModifyTarget($target)
     {
-        $normalizeTarget = $this->normalizeTarget($target);
         $unicityId = $this->getUnicityId();
+        $normalizeTarget = $this->normalizeTarget($target);
 
         $response = $this->_driver->target->find($normalizeTarget[$unicityId]);
         if ($response['statusCode'] == 404)
@@ -185,8 +185,11 @@ class Wrapper
         $newTarget = [];
         foreach ($target as $key => $value)
         {
-            if (!is_int($key))
+            if (!is_int($key)) {
+                if (!isset($this->_fields[$key])) 
+                    throw new Exception("The field named $key doesn't exist");
                 $newTarget[$this->_fields[$key]] = $value;
+            }
             else
                 $newTarget[$key] = $value;
         }

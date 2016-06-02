@@ -1,0 +1,31 @@
+[
+  {
+    "type": "email",
+    "id": 8628,
+    "name": "email",
+    "isUnicity": true,
+    "isMandatory": true
+  },
+  {
+    "type": "textField",
+    "id": 8630,
+    "name": "prénom",
+    "isUnicity": false,
+    "isMandatory": false
+  },
+  {
+    "type": "singleSelectList",
+    "id": 8631,
+    "name": "civilité",
+    "isUnicity": false,
+    "isMandatory": false,
+    "valueListId": 1227
+  },
+  {
+    "type": "phone",
+    "id": 8646,
+    "name": "Téléphone",
+    "isUnicity": false,
+    "isMandatory": false
+  }
+]

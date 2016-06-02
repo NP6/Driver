@@ -1,0 +1,38 @@
+{
+  "id": 12931,
+  "name": "Manual Import",
+  "creationDate": "2016-05-25T15:00:58.251Z",
+  "binding": 8330,
+  "features": [
+    {
+      "type": "segmentation",
+      "segmentId": 14098,
+      "emptyExisitingSegment": false
+    },
+    {
+      "type": "duplicate",
+      "rules": {
+        "ignore": true
+      }
+    },
+    {
+      "type": "report",
+      "sendFinalReport": true,
+      "sendErrorReport": true,
+      "contactGuids": [
+        "044EAE5A"
+      ],
+      "groupIds": []
+    },
+    {
+      "type": "database",
+      "updateExisting": true,
+      "crushData": false
+    }
+  ],
+  "source": {
+    "type": "file",
+    "creationDate": "2016-05-25T15:00:58.251Z",
+    "filename": null
+  }
+}

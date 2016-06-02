@@ -1,0 +1,105 @@
+[
+  {
+    "id": 12917,
+    "name": "Manual Import nodeJS",
+    "creationDate": "2016-05-23T13:39:00Z",
+    "binding": 8330,
+    "features": [
+      {
+        "type": "segmentation",
+        "segmentId": 14098,
+        "emptyExisitingSegment": false
+      },
+      {
+        "type": "report",
+        "sendFinalReport": true,
+        "sendErrorReport": true,
+        "contactGuids": [
+          "044EAE5A"
+        ],
+        "groupIds": []
+      },
+      {
+        "type": "database",
+        "updateExisting": true,
+        "crushData": false
+      }
+    ]
+  },
+  {
+    "id": 11995,
+    "name": "Import 04-04-2016 11 16",
+    "creationDate": "2016-04-04T07:17:00Z",
+    "binding": 8336,
+    "features": [
+      {
+        "type": "segmentation",
+        "segmentId": 14098,
+        "emptyExisitingSegment": false
+      },
+      {
+        "type": "duplicate",
+        "rules": {
+          "ignore": true
+        }
+      },
+      {
+        "type": "report",
+        "sendFinalReport": true,
+        "sendErrorReport": true,
+        "contactGuids": [
+          "044EAE5A"
+        ],
+        "groupIds": []
+      },
+      {
+        "type": "database",
+        "updateExisting": true,
+        "crushData": false
+      }
+    ],
+    "source": {
+      "type": "file",
+      "creationDate": "0001-01-01T00:00:00Z",
+      "filename": "CPIY0kQ3VI_import.csv"
+    }
+  },
+  {
+    "id": 11994,
+    "name": "Import 04-04-2016 10 54",
+    "creationDate": "2016-04-04T06:54:00Z",
+    "binding": 8335,
+    "features": [
+      {
+        "type": "segmentation",
+        "segmentId": 14098,
+        "emptyExisitingSegment": false
+      },
+      {
+        "type": "duplicate",
+        "rules": {
+          "ignore": true
+        }
+      },
+      {
+        "type": "report",
+        "sendFinalReport": true,
+        "sendErrorReport": true,
+        "contactGuids": [
+          "044EAE5A"
+        ],
+        "groupIds": []
+      },
+      {
+        "type": "database",
+        "updateExisting": true,
+        "crushData": true
+      }
+    ],
+    "source": {
+      "type": "file",
+      "creationDate": "0001-01-01T00:00:00Z",
+      "filename": "PlhUx08CxS_import.csv"
+    }
+  }
+]
