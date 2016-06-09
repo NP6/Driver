@@ -12,10 +12,11 @@ Feel free to report any bug or issue on GitHub
 
 ## Tests
 
-To launch the tests simply launch:
+To launch the tests simply launch the following commands:
 
 ```
-$> composer install mock server
-$> cd ..
+$> sudo npm install -g apimocker
 $> apimocker -c ./mocks/config.json
 ```
+
+Once the mock server running, you just have to run test from you IDE or using JUnit command.
