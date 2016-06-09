@@ -1,7 +1,7 @@
 Info
 --
 
-All of the function return an object that is composed like this:
+All of the function returns a promise. On success, response is composed like this:
 
 ```javascript
 var response = {

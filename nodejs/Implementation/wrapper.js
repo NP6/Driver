@@ -162,7 +162,7 @@ Wrapper.prototype.import = function(importConfig, filepath) {
 
 /**
 * normalizeTarget() is a private method that convert field
-* name to it's ID value
+* name to its ID value
 *
 * @param {Object} target
 * @return {Promise} normalizetarget

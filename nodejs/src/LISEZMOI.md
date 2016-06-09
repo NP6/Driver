@@ -1,7 +1,7 @@
 Info
 --
 
-Toute les fonctions renvoient un objet de cette forme:
+Toute les fonctions renvoient une promesse. Si la promesse est résolue, la réponse est de la forme suivante:
 
 ```javascript
 var response = {

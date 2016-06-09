@@ -17,35 +17,23 @@ function Driver(config) {
   this._request = new Request(this._xkey);
 }
 
-Object.defineProperty(Driver.prototype, 'action', {
-  get: function() {
-    return this._action || (this._action = new Action(this));
-  }
-});
-Object.defineProperty(Driver.prototype, 'segment', {
-  get: function() {
-    return this._segment || (this._segment = new Segment(this));
-  }
-});
-Object.defineProperty(Driver.prototype, 'target', {
-  get: function() {
-    return this._target || (this._target = new Target(this));
-  }
-});
-Object.defineProperty(Driver.prototype, 'send', {
-  get: function() {
-    return this._send || (this._send = new Send(this));
-  }
-});
-Object.defineProperty(Driver.prototype, 'field', {
-  get: function() {
-    return this._field || (this._field = new Field(this));
-  }
-});
-Object.defineProperty(Driver.prototype, 'import', {
-  get: function() {
-    return this._import || (this._import = new Import(this));
-  }
-});
+function defineEntity(name, Entity) {
+  Object.defineProperty(Driver.prototype, name, {
+    get: function() {
+      var entity = new Entity(this);
+      Object.defineProperty(this, name, {
+        value: entity
+      });
+      return entity;
+    }
+  });
+}
+
+defineEntity('action', Action);
+defineEntity('segment', Segment);
+defineEntity('target', Target);
+defineEntity('send', Send);
+defineEntity('field', Field);
+defineEntity('import', Import);
 
 module.exports = Driver;

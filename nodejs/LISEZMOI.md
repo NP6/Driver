@@ -7,7 +7,7 @@ Ceci est le driver permettant d'utiliser l'API de NP6
 N'hésitez pas à signaler tout problème ou poser une question sur GitHub
 
 ## Documentation
-- [Documentation et exemples du driver basic diponible ici](./src/LISEZMOI.md)
+- [Documentation et exemples du driver basique diponible ici](./src/LISEZMOI.md)
 - [Documentation et exemples de l'implemantation du driver ici](./Implementation/LISEZMOI.md)
 
 ## Tests
