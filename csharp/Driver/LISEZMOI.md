@@ -3,7 +3,7 @@ Info
 
 Toute les fonctions renvoient un objet de cette forme:
 
-```chsharp
+```csharp
 public class NResponse
 {
     public HttpStatusCode StatusCode { get; set; }
@@ -24,7 +24,7 @@ Où `statusCode` est le code HTTP de la réponse et `body` est un objet contenan
 ## Base:
 
 Créer un driver avec une xkey:
-```chsharp
+```csharp
 var config = new Dictionary<string, string>();
 
 config["xKey"] = "YOUR XKEY";
@@ -33,7 +33,7 @@ Driver driver = new Driver(config);
 ```
 
 Chaque route est disponible grâce à sa classe associé. Par exemple pour créer une cible:
-```chsharp
+```csharp
 driver.Target.Create(...);
 ```
 
@@ -60,7 +60,7 @@ Méthodes disponibles:
 
 #### Création de campagne:
 
-```chsharp
+```csharp
 NResponse response = driver.Action.Create(campaign);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -74,7 +74,7 @@ else
 
 #### Passer la campagne en phase de Test:
 
-```chsharp
+```csharp
 NResponse response = driver.Action.Test(campaignId, testObject);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -88,7 +88,7 @@ else
 
 #### Valider la campagne:
 
-```chsharp
+```csharp
 NResponse response = driver.Action.Validate(campaignId, validateObject);
 if (response.StatusCode == (HttpStatusCode)204)
 {
@@ -120,7 +120,7 @@ Méthodes disponibles:
 
 #### Création d'un ségment statique:
 
-```chsharp
+```csharp
 NResponse response = driver.Segment.Create(segment);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -134,7 +134,7 @@ else
 
 #### Ajout d'une cible à un ségment:
 
-```chsharp
+```csharp
 string segmentId = "XXXXX";
 string targetId = "XXXXXX";
 
@@ -162,7 +162,7 @@ Méthodes disponibles:
 
 #### Ajouter une cible:
 
-```chsharp
+```csharp
 NResponse response = driver.Target.Create(target);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -176,7 +176,7 @@ else
 
 #### Mettre à jour une cible:
 
-```chsharp
+```csharp
 NResponse response = driver.Target.Update(id, targetUpdate);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -190,7 +190,7 @@ else
 
 #### Envoyer un message à une cible:
 
-```chsharp
+```csharp
 String actionId = "XXXXX";
 String targetId = "XXXXXX";
 
@@ -207,7 +207,7 @@ else
 
 #### Envoyer un message en changeant sont contenus à une cible:
 
-```chsharp
+```csharp
 String actionId = "XXXXX";
 String targetId = "XXXXXX";
 MessageModel message = new MessageModel(); // Mettez le JSON ici

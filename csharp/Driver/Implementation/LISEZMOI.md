@@ -4,7 +4,7 @@ Utilisation
 #### Base:
 
 Créer un driver avec une xkey:
-```chsharp
+```csharp
 var config = new Dictionary<string, string>();
 
 config["xKey"] = "YOUR XKEY";
@@ -15,7 +15,7 @@ Wrapper wrapper = new Wrapper(config);
 #### Ajouter une cible:
 
 Créer une cible (ou la mettre à jour si elle existe déjà):
-```chsharp
+```csharp
 var target = new JsonObject
 {
     {"1234", "test@test.com"},
@@ -38,7 +38,7 @@ else
 #### Ajouter une cible et envoyer un message:
 
 Créer une cible (ou la mettre à jour si elle existe déjà) et envoyer un message à cette cible:
-```chsharp
+```csharp
 string actionId = "XXXXX";
 
 var target = new JsonObject
@@ -63,7 +63,7 @@ else
 #### Création de campagne:
 
 Créer une campagne:
-```chsharp
+```csharp
 IActionModel action = new MailCampaignModel()
 {
     Name = "Mail Campaign Test (C#)"
@@ -84,7 +84,7 @@ else
 #### Création de segment:
 
 Créer un segment statique:
-```chsharp
+```csharp
 SegmentModel segment = new SegmentModel()
 {
     Name = "My lovely segment",
@@ -109,7 +109,7 @@ else
 #### Validation de campagne:
 
 Valider une campagne (requiert de connaitre son ID):
-```chsharp
+```csharp
 string campaignId = "1234";
 
 ValidationModel validation = new ValidationModel()
@@ -137,7 +137,7 @@ else
 ### Création d'une cible, puis l'ajoute à un segment
 
 Créer une cible (ou la mettre à jour si elle existe déjà), puis l'ajoute à un segment:
-```chsharp
+```csharp
 string segmentId = "1234";
 
 JsonObject target = new JsonObject();
@@ -161,7 +161,7 @@ else
 ### Création d'une campagne, puis lancement de la phase de test
 
 Créer une campagne puis lancer la phase de test:
-```chsharp
+```csharp
 IActionModel campaign = new MailCampaignModel()
 {
     Name = "Mail Campaign Test"
@@ -190,7 +190,7 @@ else
 ### Import
 
 Lancer un import manuel:
-```chsharp
+```csharp
 string filepath = "./assets/import.csv"
 
 ImportModel import = new ImportModel()

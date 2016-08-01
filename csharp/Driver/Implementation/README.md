@@ -4,7 +4,7 @@ Usage
 #### Basics:
 
 Create a driver with a xkey:
-```chsharp
+```csharp
 JSONObject config = new JSONObject();
 
 config.put("xkey", "votre xkey");
@@ -15,7 +15,7 @@ Wrapper driver = new Wrapper(config);
 #### Add a Target:
 
 Create a target (or update it if it already exists):
-```chsharp
+```csharp
 var target = new JsonObject
 {
     {"1234", "test@test.com"},
@@ -38,7 +38,7 @@ else
 #### Add a Target and send a message:
 
 Create a target (or update it if it already exist) and send a message to this target:
-```chsharp
+```csharp
 string actionId = "XXXXX";
 
 var target = new JsonObject
@@ -63,7 +63,7 @@ else
 #### Creation of a campaign:
 
 Create a campaign:
-```chsharp
+```csharp
 IActionModel action = new MailCampaignModel()
 {
     Name = "Mail Campaign Test (C#)"
@@ -83,7 +83,7 @@ else
 #### Creation of a segment:
 
 Create a static segment:
-```chsharp
+```csharp
 SegmentModel segment = new SegmentModel()
 {
     Name = "My lovely segment",
@@ -109,7 +109,7 @@ else
 
 Validate a campaign (require the campaign ID):
 
-```chsharp
+```csharp
 string campaignId = "1234";
 
 ValidationModel validation = new ValidationModel()
@@ -138,7 +138,7 @@ else
 
 Create a target (or update it if it already exist), and then add it to the segment:
 
-```chsharp
+```csharp
 string segmentId = "1234";
 
 JsonObject target = new JsonObject();
@@ -163,7 +163,7 @@ else
 
 Create a campaign and launch the test phase
 
-```chsharp
+```csharp
 IActionModel campaign = new MailCampaignModel()
 {
     Name = "Mail Campaign Test"
@@ -192,7 +192,7 @@ else
 ### Import
 
 Launch manual import:
-```chsharp
+```csharp
 string filepath = "./assets/import.csv"
 
 ImportModel import = new ImportModel()

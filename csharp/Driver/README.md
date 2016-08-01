@@ -3,7 +3,7 @@ Info
 
 All of the function return an object that is composed like this:
 
-```chsharp
+```csharp
 public class NResponse
 {
     public HttpStatusCode StatusCode { get; set; }
@@ -24,7 +24,7 @@ Where `statusCode` is the HTTP code and `body` an object that is the response of
 ## Basics:
 
 Create a driver with a xkey:
-```chsharp
+```csharp
 var config = new Dictionary<string, string>();
 
 config["xKey"] = "YOUR XKEY";
@@ -33,7 +33,7 @@ Driver driver = new Driver(config);
 ```
 
 Each route is available with his own class. For exemple to create a target:
-```chsharp
+```csharp
 driver.Target.Create(...);
 ```
 This is a list of available routes:
@@ -59,7 +59,7 @@ Available methods:
 
 ###### Creation of a campaign:
 
-```chsharp
+```csharp
 NResponse response = driver.Action.Create(campaign);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -73,7 +73,7 @@ else
 
 ###### Put the campaign on Test phase:
 
-```chsharp
+```csharp
 NResponse response = driver.Action.Test(campaignId, testObject);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -87,7 +87,7 @@ else
 
 ###### Validate the campaign:
 
-```chsharp
+```csharp
 NResponse response = driver.Action.Validate(campaignId, validateObject);
 if (response.StatusCode == (HttpStatusCode)204)
 {
@@ -119,7 +119,7 @@ Available methods:
 
 ###### Creation of a static segment:
 
-```chsharp
+```csharp
 NResponse response = driver.Segment.Create(segment);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -133,7 +133,7 @@ else
 
 ###### Adding a target to a segment:
 
-```chsharp
+```csharp
 string segmentId = "XXXXX";
 string targetId = "XXXXXX";
 
@@ -161,7 +161,7 @@ Available methods:
 
 ###### Add a Target:
 
-```chsharp
+```csharp
 NResponse response = driver.Target.Create(target);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -175,7 +175,7 @@ else
 
 ###### Update a Target:
 
-```chsharp
+```csharp
 NResponse response = driver.Target.Update(id, targetUpdate);
 if (response.StatusCode == (HttpStatusCode)200)
 {
@@ -189,7 +189,7 @@ else
 
 ###### Send a message to a Target:
 
-```chsharp
+```csharp
 String actionId = "XXXXX";
 String targetId = "XXXXXX";
 
@@ -206,7 +206,7 @@ else
 
 ###### Send a message with a different content to a Target:
 
-```chsharp
+```csharp
 String actionId = "XXXXX";
 String targetId = "XXXXXX";
 MessageModel message = new MessageModel(); // Put the JSON there
