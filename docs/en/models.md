@@ -17,7 +17,7 @@
 
 ## Reminder
 
-We want to remind you that these models are given to you as it, if you want more precise information on which fields are available go to our [documentation](http://v8.mailperformance.com/doc/).
+We want to remind you that these models are given to you as it, if you want more precise information on which fields are available go to our [documentation](https://backoffice.mailperformance.com/doc/).
 
 ## Action
 

@@ -26,12 +26,12 @@ class Wrapper
         return $this->_driver;
     }
     /**
-     * @param array $target
+     * @param array $segment
      * @return array
      */
-    public function createSegment($target)
+    public function createSegment($segment)
     {
-        return $this->_driver->segment->create($target);
+        return $this->_driver->segment->create($segment);
     }
     /**
      * @param array $action
@@ -186,7 +186,7 @@ class Wrapper
         foreach ($target as $key => $value)
         {
             if (!is_int($key)) {
-                if (!isset($this->_fields[$key])) 
+                if (!isset($this->_fields[$key]))
                     throw new Exception("The field named $key doesn't exist");
                 $newTarget[$this->_fields[$key]] = $value;
             }

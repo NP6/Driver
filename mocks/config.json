@@ -81,7 +81,7 @@
 			}
 		},
 		"targets": {
-			"verbs": ["get", "post"],
+		    "verbs": ["get", "post", "put"],
 			"switch": "unicity",
 			"responses": {
 				"get": {
@@ -91,6 +91,10 @@
 				"post": {
 					"httpStatus": 200,
 					"mockFile": "targets/created.json"
+				},
+				"put": {
+				    "httpStatus": 200,
+				    "mockFile": "targets/created.json"
 				}
 			},
 			"switchResponse": {

@@ -29,7 +29,7 @@ public class Driver {
             throw new IllegalArgumentException("Parameter cannot be null");
         }
 
-        this._url = config.has("url") ? config.getString("url") : "http://v8.mailperformance.com/";
+        this._url = config.has("url") ? config.getString("url") : "https://backoffice.mailperformance.com/";
         this._xkey = config.getString("xkey");
         this._connection = new Connection(this._xkey, this._url);
         this.segment = new Segment(this._connection);

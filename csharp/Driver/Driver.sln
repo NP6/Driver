@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverTest", "..\DriverTest\DriverTest.csproj", "{690B26FD-BE2E-403D-AA15-C8DA56A5FC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "..\Driver\Driver.csproj", "{52440930-3D1E-4D00-84BA-3582AC924B41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{690B26FD-BE2E-403D-AA15-C8DA56A5FC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690B26FD-BE2E-403D-AA15-C8DA56A5FC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690B26FD-BE2E-403D-AA15-C8DA56A5FC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690B26FD-BE2E-403D-AA15-C8DA56A5FC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52440930-3D1E-4D00-84BA-3582AC924B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52440930-3D1E-4D00-84BA-3582AC924B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52440930-3D1E-4D00-84BA-3582AC924B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52440930-3D1E-4D00-84BA-3582AC924B41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -17,7 +17,7 @@
 
 ## Rappel
 
-Nous vous rappelons que ces modèles vous sont donnés à titre indicatif, pour plus d'informations concernant les champs disponibles rendez-vous sur notre [documentation](http://v8.mailperformance.com/doc/).
+Nous vous rappelons que ces modèles vous sont donnés à titre indicatif, pour plus d'informations concernant les champs disponibles rendez-vous sur notre [documentation](https://backoffice.mailperformance.com/doc/).
 
 ## Action
 

@@ -23,7 +23,7 @@ class Driver
     public function __construct($config)
     {
         $this->_xKey = $config['xKey'];
-        $this->_url = (isset($config['url'])) ? $config['url'] : 'http://v8.mailperformance.com/';
+        $this->_url = (isset($config['url'])) ? $config['url'] : 'https://backoffice.mailperformance.com/';
         $this->_connection = new Connection($this->_xKey, $this->_url);
         $this->segment = new Segment($this->_connection);
         $this->target = new Target($this->_connection);
